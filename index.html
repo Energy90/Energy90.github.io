@@ -9,11 +9,73 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- custom style -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fixed.css">
 
         <title>Home Page</title>
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbarResponsive">
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#"><h3>COftware</h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End navigation -->
+
+            <!-- landing page section -->
+            <div class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="caption text-center">
+                <h1>Welcome to COftware</h1>
+            </div>
+            <!-- End landing page section -->
+
+        </div>
+        <!-- End home section -->
+
+        <!-- Start services section -->
+        <div id="service" class="offset">
+
+        </div>
+        <!-- End services section -->
+
+        <!-- Start about section -->
+        <div id="about" class="offset">
+
+        </div>
+        <!-- End about section -->
+
+        <!-- Start contact section -->
+        <div id="contact" class="offset">
+
+        </div>
+        <!-- End contact section -->
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
