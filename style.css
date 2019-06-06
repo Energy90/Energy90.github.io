@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');*/
 /* body style */
 body
 {
     overflow-x: hidden;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Hind', sans-serif;
     color: #505962;
 }
 
@@ -54,8 +55,8 @@ body
     padding-top: 80px;
 }
 
-/* landing page */
-.home-inner
+/* home background page */
+.home-background
 {
     background-image: url(images/clement-h-544786-unsplash.jpg);
 }
@@ -114,6 +115,17 @@ h3.heading
     background-color: #17a2b8;
     margin: 0 auto 2rem;
 }
+.service
+{
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, transform 1s;
+}
+.service:hover
+{
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2);
+    color: #17a2b8;
+}
 .service h3
 {
     font-size: 1.3rem;
@@ -124,11 +136,12 @@ h3.heading
 {
     width: 6rem;
     height: 6rem;
-    margin: 1rem;
+    margin: 1.6rem;
 }
-.service p
+.backend p i
 {
-    font-size: 1.1rem;
+    /*font-size: 1.1rem;*/
+    margin-top: .8rem;
 }
 
 .service .fab
@@ -262,6 +275,10 @@ hr.footer
     {
         width: 5rem;
         height: 5rem;
+    }
+    .service p i
+    {
+        font-size: 1rem;
     }
     .narrow h1
     {
