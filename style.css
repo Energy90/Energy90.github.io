@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
-/*@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* body style */
 body
 {
     overflow-x: hidden;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #505962;
 }
 
@@ -19,11 +19,14 @@ body
 .navbar 
 {
     text-transform: uppercase;
-    font-weight: 700;
     font-size: .9rem;
     background: rgba(0, 0, 0, 0.6)!important;
 }
 
+.navbar-brand h3
+{
+    color: #17a2b8;
+}
 .navbar-brand img
 {
     height: 2.5rem;
@@ -40,19 +43,33 @@ body
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link
+{
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover
 {
+    -webkit-transform: scale(1.3); /* Safari */
+    transform: scale(1.3);
     color: #17a2b8;
 }
 
-/* carousel */
+/* carousel*/ 
 .carousel-item 
 {
-    height: 400px;
+    height: 20rem;
 }
-.carousel-item h1
+
+
+.carousel-item blockquote
 {
-    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.3rem;
+    color: white;
 }
 
 /* home background page */
@@ -63,7 +80,7 @@ body
 
 #home
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .caption
@@ -80,12 +97,13 @@ body
 .caption h1
 {
     font-size: 3.8rem;
-    font-weight: 700;
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black;
+    padding-top: 7rem;
+
 }
 
-.caption h3
+.caption h5
 {
     font-size: 2rem;
     text-shadow: .1rem .1rem .5rem black;
@@ -103,7 +121,6 @@ body
 h3.heading
 {
     font-size: 1.9rem;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
 }
@@ -134,8 +151,8 @@ h3.heading
 }
 .service img
 {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     margin: 1.6rem;
 }
 .backend p i
@@ -149,6 +166,11 @@ h3.heading
     color: #17a2b8;
 }
 
+.service .content
+{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .fixed
 {
     background-image: url(images/christopher-gower-291246-unsplash.jpg);
@@ -159,7 +181,7 @@ h3.heading
 {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 7rem 2rem;
+    padding: 3rem 2rem 5rem 2rem;
 }
 
 .fixed-background h3
@@ -176,26 +198,48 @@ h3.heading
 .profile img
 {
     width: 100%;
-    border: white;
-    border-style: solid;
     border-radius: 50%;
 }
-.row h5
+.row h4
 {
     color: #17a2b8;
+}
+
+.row .about
+{
+    box-shadow: .6rem .6rem .3rem grey;
+    /*border-radius: 5%;*/
+}
+
+#smiley span {
+    font-size: 1.2rem;
+    color: #17a2b8;
+  }
+
+#about #achievement
+{
+    background-color: rgba(23, 168, 184, .7);
+    color: white;
+
+}
+
+.other h3
+{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 0.8rem;
+}
+
+.other i
+{
+    /*font-size: 1.1rem;*/
+    margin: 1rem;
 }
 
 /* Contact section */
-#contact .fab
+#contact h5
 {
-    font-size: 2rem;
-    margin: 0 .7rem 0 0;
     color: #17a2b8;
-}
-
-#contact .fab:hover
-{
-    color: rgba(0, 0, 255, 0.8);
 }
 
 .form-group input
@@ -203,12 +247,20 @@ h3.heading
     border-style: solid;
     border-width: .1rem;
     border-color: #17a2b8;
+    border-radius: 0!important;
 }
 
 .form-group textarea
 {
     border: .1rem solid #17a2b8;
+    border-radius: 0!important;
 }
+form button
+{
+    border-radius: 0!important;
+    border-width: .1rem!important;
+}
+
 
 /* Foooter section */
 footer .fab:hover
@@ -260,25 +312,61 @@ hr.footer
         padding-bottom: .5rem;
     }
 
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link
+    {
+        -webkit-transition: none!important;
+        transition: none!important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link:hover
+    {
+        -webkit-transform: none!important; /* Safari */
+        transform: none!important;
+    }
+
     .caption h3
     {
         font-size: 1.2rem;
         padding-bottom: 1.2rem;
     }
 
+    .carousel-item h3,blockquote
+    {
+        padding: 5px!important;
+    }
+
+    .carousel-item blockquote
+    {
+
+        font-size: .9rem;
+    }
+
     .service i
     {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .service img
     {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
     .service p i
     {
         font-size: 1rem;
+    }
+
+    .service
+    {
+        -webkit-transition: none!important;
+        transition: none!important;
+    }
+    .service:hover
+    {
+        -webkit-transform: none!important; /* Safari */
+        transform: none!important;
     }
     .narrow h1
     {
@@ -290,12 +378,24 @@ hr.footer
         max-width: 50%;
         display: block;
         margin: 0 auto;
+        /*border-radius: 50%;*/
+    }
+
+    .other i
+    {
+        font-size: 4rem;
+    }
+
+    .row .about
+    {
+        box-shadow: none;
     }
 
     footer img
     {
         height: 2rem;
     }
+    
 }
 
 
