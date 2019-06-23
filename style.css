@@ -147,7 +147,7 @@ h3.heading
 {
     font-size: 1.3rem;
     text-transform: uppercase;
-    padding-bottom: 0.4;
+    padding-bottom: 0.4rem;
 }
 .service img
 {
@@ -157,7 +157,6 @@ h3.heading
 }
 .backend p i
 {
-    /*font-size: 1.1rem;*/
     margin-top: .8rem;
 }
 
@@ -370,6 +369,12 @@ hr.footer
     {
         -webkit-transform: none!important; /* Safari */
         transform: none!important;
+    }
+
+    .service .content
+    {
+        padding-left: 0;
+        padding-right: 0;
     }
     .narrow h1
     {
