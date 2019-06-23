@@ -319,6 +319,7 @@ hr.footer
     {
         -webkit-transition: none!important;
         transition: none!important;
+        text-align: center;
     }
 
     .navbar-dark .navbar-nav .nav-link.active,
