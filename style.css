@@ -208,7 +208,6 @@ h3.heading
 .row .about
 {
     box-shadow: .6rem .6rem .3rem grey;
-    /*border-radius: 5%;*/
 }
 
 #smiley span {
@@ -230,9 +229,13 @@ h3.heading
     padding-bottom: 0.8rem;
 }
 
+.other p
+{
+    font-size: 1.3rem;
+}
+
 .other i
 {
-    /*font-size: 1.1rem;*/
     margin: 1rem;
 }
 
@@ -326,9 +329,9 @@ hr.footer
         transform: none!important;
     }
 
-    .caption h3
+    .caption h5
     {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding-bottom: 1.2rem;
     }
 
@@ -378,7 +381,6 @@ hr.footer
         max-width: 50%;
         display: block;
         margin: 0 auto;
-        /*border-radius: 50%;*/
     }
 
     .other i
@@ -386,6 +388,20 @@ hr.footer
         font-size: 4rem;
     }
 
+    .carousel-item 
+    {
+        height: 26rem;
+    }
+
+    .carousel-item blockquote
+    {
+        font-size: 1rem;
+    }
+
+    .other p 
+    {
+        font-size: 1rem;
+    }
     .row .about
     {
         box-shadow: none;
