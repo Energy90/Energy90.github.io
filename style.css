@@ -66,8 +66,8 @@ body
 
 .carousel-item blockquote
 {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     font-size: 1.3rem;
     color: white;
 }
@@ -147,7 +147,7 @@ h3.heading
 {
     font-size: 1.3rem;
     text-transform: uppercase;
-    padding-bottom: 0.4rem;
+    padding-bottom: .4rem;
 }
 .service img
 {
@@ -281,7 +281,7 @@ footer
 footer img
 {
     height: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 footer p
@@ -337,7 +337,7 @@ hr.footer
 
     .carousel-item h3,blockquote
     {
-        padding: 5px!important;
+        padding: .312rem!important;
     }
 
     .carousel-item blockquote
